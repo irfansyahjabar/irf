@@ -1,0 +1,36 @@
+package javaapplication18;
+import java.util.Scanner;
+public class JavaApplication18 {
+    public static void main(String[] args) {
+        System.out.println("pilih operator!!");
+        System.out.println("1.penjumlahan");
+        System.out.println("2.pengurangan");
+        System.out.println("3.perkalian");
+        System.out.println("4.pembagian");
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("masukan kode operator: ");
+        int pilihan = input.nextInt();
+        
+        System.out.println();
+        System.out.println("masukan bilangan pertama: ");
+        int bilangan1 = input.nextInt();
+        System.out.println("masukan bilangan kedua: ");
+        int bilangan2 = input.nextInt();
+        
+        if (pilihan == 1){
+            int hasil = bilangan1 + bilangan2;
+            System.out.println("hasil penjumlahan: " + hasil);
+        }else if (pilihan == 2){
+            int hasil = bilangan1 - bilangan2;
+            System.out.println("hasil pengurangan: " + hasil);
+        }else if (pilihan == 3){
+            int hasil = bilangan1 * bilangan2;
+            System.out.println("hasil perkalian: " + hasil);
+        }else if (pilihan == 4){
+            int hasil = bilangan1 / bilangan2;
+            System.out.println("hasil pembagian: " + hasil);
+        }
+    }
+    
+}
